@@ -4,9 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
+import { TestLibraryModule } from '@mynamespace/test-library';
+
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, TestLibraryModule],
   providers: [],
   bootstrap: [AppComponent],
 })
